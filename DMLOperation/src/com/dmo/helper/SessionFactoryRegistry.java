@@ -1,5 +1,16 @@
 package com.dmo.helper;
 
-public class SessionFactoryRegistry {
+import org.hibernate.SessionFactory;
 
+public class SessionFactoryRegistry {
+	private static SessionFactory sessionFactory;
+	
+	static {
+		try {
+			
+		} catch (Throwable t) {
+			t.printStackTrace();
+			throw t;
+		}
+	}
 }
