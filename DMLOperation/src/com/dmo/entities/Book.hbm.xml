@@ -4,7 +4,7 @@
 "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping package="com.dmo.entities">
 	<class name="Book" table="book_tab">
-		<id name="bookId" column="book_id">
+		<id name="bookId" column="book_id" unsaved-value="0">
 			<generator class="increment"></generator>
 		</id>
 		<property name="author" />
